@@ -29,3 +29,9 @@ Features:
 
 Expected outcome:
 Developers can manage larger projects more efficiently.
+
+## Agile Principles Applied
+
+DevFlow will be developed incrementally so that feedback can influence future iterations. Each iteration will deliver a usable improvement rather than waiting until the entire application is complete.
+
+The backlog will remain flexible, allowing priorities to change as development progresses and new requirements are discovered.

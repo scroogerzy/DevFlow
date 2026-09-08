@@ -105,3 +105,59 @@ Features:
 
 Feedback:
 Review whether developers can manage their projects more efficiently and adjust the backlog for future iterations.
+
+## Assignment 2.2
+
+# Question 1 — Roles, solo and shared
+
+## TrackFlow
+
+For TrackFlow, the Product Owner would likely be the instructor because they define the project vision, priorities, and requirements.
+
+The Scrum Master role could be handled by a trainee who helps coordinate meetings, removes blockers, and ensures the team follows Scrum practices.
+
+The Dev Team role would be shared by all trainees because they are responsible for designing, developing, testing, and delivering features.
+
+## Daily App — DevFlow
+
+For DevFlow, I will act as the Product Owner, Scrum Master, and Developer because I am building the application independently.
+
+The role I expect to neglect first is the Scrum Master role because when focusing on development, I may ignore planning, reflection, and maintaining Agile habits.
+
+A habit that would prevent this is scheduling regular weekly reviews where I update my backlog, review progress, and identify blockers before starting new work.
+
+---
+
+# Question 2 — Definition of Ready and Definition of Done
+
+## Definition of Ready — DevFlow Authentication Epic
+
+A backlog item is ready when:
+
+- The user story is clearly written and understandable.
+- The purpose of the feature is defined.
+- Acceptance criteria are identified.
+- Dependencies are known.
+- Required technical approach is understood.
+- The task is small enough to complete within a sprint.
+
+## Definition of Done — DevFlow Authentication Epic
+
+A backlog item is done when:
+
+- The feature has been implemented.
+- The code has been tested.
+- The feature works according to acceptance criteria.
+- Errors and edge cases have been handled.
+- Documentation has been updated if necessary.
+- The changes have been committed to Git.
+
+---
+
+# Question 3 — The artifact most at risk
+
+The Scrum artifact most likely to be skipped in a solo project is the Sprint Backlog.
+
+When working alone, it is easy to immediately start coding without selecting specific sprint goals and planned tasks.
+
+The cost of skipping it is losing focus because there is no clear short-term objective. This can lead to unfinished features, changing priorities, and difficulty measuring progress.

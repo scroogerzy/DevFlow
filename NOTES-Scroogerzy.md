@@ -161,3 +161,47 @@ The Scrum artifact most likely to be skipped in a solo project is the Sprint Bac
 When working alone, it is easy to immediately start coding without selecting specific sprint goals and planned tasks.
 
 The cost of skipping it is losing focus because there is no clear short-term objective. This can lead to unfinished features, changing priorities, and difficulty measuring progress.
+
+## Assignment 2.3
+
+# Question 1 — Choosing a view
+
+The primary view for DevFlow will be the **Board view** because DevFlow uses a Kanban-style workflow. It makes it easy to see tasks moving through stages such as Backlog, In Progress, Testing, and Completed.
+
+The **List view** will help when reviewing the full backlog and checking task details. The **Timeline view** will help with planning dates, dependencies, and longer-term development work.
+
+# Question 2 — Custom fields, deliberately
+
+## Priority
+
+Used to filter tasks by priority so that high-priority work can be identified and completed first.
+
+## Type
+
+Used to distinguish between Features, Bugs, Improvements, and Documentation tasks.
+
+## Story Points
+
+Used to estimate effort and support Sprint Planning by helping decide how much work can reasonably be included in a sprint.
+
+# Question 3 — Tag or field?
+
+A **tag** that DevFlow could use is `needs-design`. It is a flexible label that can be applied to tasks across projects.
+
+A **custom field** should be **Priority** because it needs consistent values and filtering within the DevFlow project.
+
+If Priority were used as a tag, different labels such as `High`, `high`, or `urgent` could make filtering inconsistent. If `needs-design` were a custom field, it would add unnecessary structure to a flexible label.
+
+# NOTES.md Updates
+
+## What the backlog exercise revealed
+
+The backlog exercise revealed that the initial backlog contains useful functionality, but some items need further refinement before development. Breaking broad requirements into smaller tasks makes them easier to understand, estimate, and complete within a sprint.
+
+## Where Sprint 1 Backlog and reality disagreed
+
+The Sprint 1 backlog focused on the Authentication epic with registration, login, and logout. In a real development situation, implementation details, validation requirements, testing, and technical dependencies could make these items larger than initially expected. This shows why the sprint backlog should be reviewed and adjusted as new information is discovered.
+
+## Field vs tag decision
+
+The field versus tag decision could easily be confused when setting up the project in Asana. Priority should be a custom field because it requires consistent values and filtering. A flexible label such as `needs-design` is better suited to a tag.

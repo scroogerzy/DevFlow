@@ -205,3 +205,107 @@ The Sprint 1 backlog focused on the Authentication epic with registration, login
 ## Field vs tag decision
 
 The field versus tag decision could easily be confused when setting up the project in Asana. Priority should be a custom field because it requires consistent values and filtering. A flexible label such as `needs-design` is better suited to a tag.
+
+## Assignment 2.4
+
+# Question 1 — Rewrite Sprint 1 as real user stories
+
+### 1. User registration
+
+As a developer, I want to create a DevFlow account so that I can securely manage my own development projects and tasks.
+
+### 2. User login
+
+As a registered developer, I want to log in to my DevFlow account so that I can access my projects and tasks.
+
+### 3. User logout
+
+As a logged-in developer, I want to log out of DevFlow so that my account remains protected when I finish using the application.
+
+### 4. Password reset
+
+As a DevFlow user, I want to reset my password if I forget it so that I can regain access to my account.
+
+### 5. Session security
+
+As a DevFlow user, I want my login session to remain secure so that other people cannot access my account without permission.
+
+# Question 2 — Acceptance criteria
+
+### User registration
+
+* The user can enter the required registration details.
+* The system validates required fields.
+* The system prevents registration with an already registered email address.
+* A valid registration creates a new user account.
+
+### User login
+
+* A registered user can enter their email and password.
+* Correct credentials allow the user to access their account.
+* Incorrect credentials display an appropriate error message.
+* The user's authenticated session is maintained after successful login.
+
+### User logout
+
+* A logged-in user can select the logout option.
+* The current session is ended after logout.
+* The user is redirected to the login or appropriate public page.
+* Protected pages cannot be accessed through the ended session.
+
+### Password reset
+
+* The user can request a password reset using their registered email address.
+* The system confirms that the reset request was received.
+* The user can create a new password through the reset process.
+* The new password can be used to log in.
+
+### Session security
+
+* An authenticated user receives a valid session after login.
+* Protected pages require an authenticated session.
+* Logging out invalidates the active session.
+* An unauthenticated user cannot access protected account pages.
+
+# Question 3 — INVEST check
+
+I evaluated the **User registration** story.
+
+* **Independent:** Yes, registration can be developed before most other authentication features.
+* **Negotiable:** Yes, the exact registration interface and validation details can be refined.
+* **Valuable:** Yes, users need an account before they can manage their DevFlow data.
+* **Estimable:** Yes, the work can be estimated based on the required form, validation, account creation, and testing.
+* **Small:** Yes, the story can reasonably fit within one sprint.
+* **Testable:** Yes, successful registration, validation, duplicate accounts, and errors can be tested.
+
+The story passes all INVEST criteria, so no scope change is required.
+
+# Question 4 — Story points
+
+Using the reference-story approach, the Sprint 1 estimates are:
+
+| Story             | Story Points |
+| ----------------- | ------------ |
+| User registration |            3 |
+| User login        |            3 |
+| User logout       |            2 |
+| Password reset    |            5 |
+| Session security  |            5 |
+
+Password reset and session security received higher estimates because they involve more validation, security considerations, and testing than the original rough backlog phrases suggested.
+
+# NOTES.md Updates
+
+## 1. What changed between backlog phrase and real story
+
+The "User login" backlog phrase initially looked like a simple login feature. Writing it as a full user story made the purpose clearer: the goal is not only to enter credentials, but to allow a registered developer to securely access their projects and tasks.
+
+## 2. The retro, from the inside
+
+The TrackFlow retrospective will be used to identify a practical improvement that can be applied to my own sprint retrospective once the class mock sprint has been completed.
+
+## 3. Estimating with real stories vs. rough backlog items
+
+The estimates feel more confident when using complete user stories because the user, purpose, scope, and acceptance criteria are clearer. Rough backlog phrases hide implementation and testing work, which can make the original estimate less reliable.
+
+

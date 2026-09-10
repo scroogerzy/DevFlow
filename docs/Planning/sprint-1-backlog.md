@@ -1,47 +1,98 @@
 # DevFlow Sprint 1 Backlog
 
-## Sprint Goal
+# Sprint Goal
 
-Build the foundation for user authentication so that a developer can create an account, log in, and log out of DevFlow.
+# 
 
-## Selected Backlog Items
+# Build a secure authentication foundation that allows developers to create, access, protect, and recover their DevFlow accounts.
 
-### 1. User registration
+# 
 
-**Epic:** Authentication
+# Selected Backlog Items
 
-A user should be able to create a DevFlow account using the required registration details.
+# 1\. User registration
 
-### 2. User login
+# 
 
-**Epic:** Authentication
+# Epic: Authentication
 
-A registered user should be able to log in securely and access their DevFlow account.
+# 
 
-### 3. User logout
+# A developer should be able to create a DevFlow account using the required registration details.
 
-**Epic:** Authentication
+# 
 
-A logged-in user should be able to log out of DevFlow and end their current session.
+# Story Points: 3
 
-## Why These Items Are Ready
+# 
 
-These items have a clear purpose, their expected functionality is understandable, acceptance criteria can be identified, dependencies are known, and each item is small enough to be completed within a sprint.
+# 2\. User login
 
-## Items Not Pulled Into Sprint 1
+# 
 
-### Create a development board
+# Epic: Authentication
 
-This is a core feature, but it will be addressed after the authentication foundation is established.
+# 
 
-### Create task cards
+# A registered developer should be able to log in securely and access their DevFlow account.
 
-This depends on the board and column workflow being implemented first.
+# 
 
-### Search and filter task cards
+# Story Points: 3
 
-This is a productivity feature that is more useful once users have a collection of task cards.
+# 
 
-### Responsive layout
+# 3\. User logout
 
-This is an important user experience improvement, but it is not required for the initial authentication foundation.
+# 
+
+# Epic: Authentication
+
+# 
+
+# A logged-in developer should be able to log out of DevFlow and end their current session.
+
+# 
+
+# Story Points: 2
+
+# 
+
+# 4\. Password reset
+
+# 
+
+# Epic: Authentication
+
+# 
+
+# A DevFlow user should be able to reset their password if they forget it and regain access to their account.
+
+# 
+
+# Story Points: 5
+
+# 
+
+# 5\. Session security
+
+# 
+
+# Epic: Authentication
+
+# 
+
+# A DevFlow user should have a secure login session so that unauthorised users cannot access protected account information.
+
+# 
+
+# Story Points: 5
+
+# 
+
+# Why These Items Are Ready
+
+# 
+
+# These items have a clear purpose, understandable functionality, identifiable acceptance criteria, known dependencies, and a scope that can be estimated and tested within the sprint.
+

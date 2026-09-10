@@ -7,6 +7,8 @@ This Product Backlog contains the initial unrefined backlog items for DevFlow. T
 1. User registration
 2. User login
 3. User logout
+4. Password reset
+5. Session security
 
 ## Boards and Cards
 
@@ -31,3 +33,4 @@ This Product Backlog contains the initial unrefined backlog items for DevFlow. T
 ## Productivity Features
 
 15. Search and filter task cards
+

@@ -371,5 +371,43 @@ https://docs.google.com/presentation/d/1jJaGpgXH8biicKOWh03hMrReiZAKwPD6uFw36Zz7
 DevFlow Calendar Event:
 https://calendar.app.google/snaD5bkLhJKXSKDa9
 
+## Assignment 3.2
 
+## Question 1 — Beyond the core four
 
+The additional README section DevFlow needs is a **Tech Stack** section. It should identify the main technologies, frameworks, tools, and supporting technologies used by the project.
+
+This is important because a developer cloning the repository needs to understand the technical environment before attempting to set up or run the project. Without this information, they may not know which runtime, framework, database, or development tools are required, which can make setup slower and cause avoidable compatibility problems.
+
+## Question 2 — Comment audit
+
+The current DevFlow capstone repository is primarily a planning and documentation repository and does not currently contain implementation source code with inline code comments. Therefore, I could not honestly identify an existing code comment that restates code or provide a real source-code line without inventing evidence.
+
+However, the architecture documentation contains a non-obvious design decision that benefits from an explanation of why it was chosen: the browser and future mobile application communicate through the same backend API. This is more than a routine implementation detail because it affects the overall architecture and future extensibility of DevFlow.
+
+## Question 3 — What makes a decision ADR-worthy?
+
+A real technical decision in DevFlow is using a shared backend API as the communication layer between the browser, future mobile application, and database.
+
+This decision is ADR-worthy because it affects the overall system architecture rather than a routine implementation detail. It determines how different clients communicate with the system and allows a future mobile application to use the same backend services. Changing this architectural approach later could require significant restructuring, so documenting the decision and its consequences will help future developers understand why it was chosen.
+
+### Assignment 3.2 — Reflection
+
+#### 1. What the sample revealed
+
+The QuickNotes sample showed me that technical documentation should explain the important reasons behind implementation choices instead of documenting every obvious line of code. README files should help a new developer set up and use a project, API documentation should clearly describe how a service is called, and ADRs should record important technical decisions and their consequences.
+
+#### 2. Comment I was wrong about
+
+I initially expected the DevFlow repository to contain implementation comments that could be audited. After checking the repository, I found that the current capstone is primarily a planning and documentation repository and does not yet contain implementation source code. Therefore, I could not honestly remove or rewrite a real code comment without inventing evidence.
+
+#### 3. Decision vs implementation detail
+
+A technical decision should be documented when it has a meaningful impact on the architecture, future development, maintainability, or system behaviour. Routine implementation details do not need an ADR. For DevFlow, using a shared backend API is ADR-worthy because it affects how the browser, future mobile application, and database communicate.
+
+## Assignment 3.2 — Deliverables
+
+* README: `README.md`
+* ADR: `docs/decisions/001-shared-backend-api.md`
+* Technical documentation: `docs/API/authentication-module.md`
+* QuickNotes practice: `QuickNotes/`

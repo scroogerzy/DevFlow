@@ -308,4 +308,106 @@ The TrackFlow retrospective will be used to identify a practical improvement tha
 
 The estimates feel more confident when using complete user stories because the user, purpose, scope, and acceptance criteria are clearer. Rough backlog phrases hide implementation and testing work, which can make the original estimate less reliable.
 
+# Assignment 3.1
 
+## Question 1 — Suggesting mode vs. comments vs. direct edits
+
+Direct edits: I would use direct edits when I have permission to make a change that is already agreed upon. For example, I would directly update the DevFlow project timeline when the team has agreed on new dates.
+
+Suggesting mode: I would use suggesting mode when I want to propose a change to someone else's work without changing the original content permanently. For example, I could suggest changes to the DevFlow project scope for the document owner to accept or reject.
+
+Comments: I would use comments when I need clarification, feedback, or discussion without changing the document. For example, I could comment on the DevFlow project requirements and ask whether a particular feature should be included in the first sprint.
+
+## Question 2 — Permissions, deliberately
+
+Editor: Teammates working directly on the Daily App project will receive Editor access because they need to create, update, and organise project documents and files.
+
+Commenter: The instructor or mentor will receive Commenter access because they need to review the work and provide feedback without changing the project structure or content directly.
+
+Viewer: Other cohorts or people who only need to see the project information will receive Viewer access because they do not need to modify or comment on the project files.
+
+Permissions should be assigned according to the work each person needs to perform rather than giving everyone Editor access.
+
+## Question 3 — Sync or async?
+
+Goal-setting and project documentation should mainly be handled asynchronously in Google Docs because team members can review and contribute without requiring a meeting.
+
+Task assignment should be managed asynchronously using Google Sheets and the project tracker because tasks, owners, statuses, and due dates can be recorded clearly.
+
+Status updates should normally be asynchronous because team members can update the tracker without interrupting development.
+
+Blocking questions should be handled in a live Google Meet when the issue requires discussion, clarification, or a quick decision from multiple people.
+
+A live kickoff meeting should therefore focus on important decisions and blockers, while routine information should remain in Docs, Sheets, and Calendar.
+
+## NOTES.md Updates
+
+### 1. What the “TidyUp” practice revealed
+
+The TidyUp practice showed me the importance of keeping project documents, task tracking, presentations, and meeting information connected. It also helped me understand how permissions, comments, suggestions, and version history support collaboration. I used the same structure for my real DevFlow kickoff.
+
+### 2. The permission I almost got wrong
+
+The main permission risk was giving everyone Editor access by default. I learned that access should depend on what each person actually needs to do. Editors should be able to modify project work, Commenters should provide feedback, and Viewers should only need to see information.
+
+### 3. Sync vs. async, in practice
+
+The kickoff confirmed that routine information such as goals, tasks, progress, and documentation can be handled asynchronously using Docs, Sheets, and Calendar. A live Meet is more useful for discussing blockers, making decisions, and clarifying issues that would take longer to resolve through messages.
+
+## Real DevFlow Workspace Links
+
+DevFlow Drive Folder:
+https://drive.google.com/drive/folders/1J8I6zfMzkwQ8EYnUC9HtuUqjcwoHKMt-?usp=sharing
+
+DevFlow Project Doc:
+https://docs.google.com/document/d/1TJJ4lRc0D_B9lXwxO-jxNV6re5kFvvu9ymjRxSiHjdo/edit?usp=sharing
+
+DevFlow Task Tracker:
+https://docs.google.com/spreadsheets/d/1V0mtKVHs_Xjtclv6CSupga7sMn1uqoxpwgLopEf0PaU/edit?usp=sharing
+
+DevFlow Kickoff Deck:
+https://docs.google.com/presentation/d/1jJaGpgXH8biicKOWh03hMrReiZAKwPD6uFw36Zz7_j8/edit?usp=sharing
+
+DevFlow Calendar Event:
+https://calendar.app.google/snaD5bkLhJKXSKDa9
+
+## Assignment 3.2
+
+## Question 1 — Beyond the core four
+
+The additional README section DevFlow needs is a **Tech Stack** section. It should identify the main technologies, frameworks, tools, and supporting technologies used by the project.
+
+This is important because a developer cloning the repository needs to understand the technical environment before attempting to set up or run the project. Without this information, they may not know which runtime, framework, database, or development tools are required, which can make setup slower and cause avoidable compatibility problems.
+
+## Question 2 — Comment audit
+
+The current DevFlow capstone repository is primarily a planning and documentation repository and does not currently contain implementation source code with inline code comments. Therefore, I could not honestly identify an existing code comment that restates code or provide a real source-code line without inventing evidence.
+
+However, the architecture documentation contains a non-obvious design decision that benefits from an explanation of why it was chosen: the browser and future mobile application communicate through the same backend API. This is more than a routine implementation detail because it affects the overall architecture and future extensibility of DevFlow.
+
+## Question 3 — What makes a decision ADR-worthy?
+
+A real technical decision in DevFlow is using a shared backend API as the communication layer between the browser, future mobile application, and database.
+
+This decision is ADR-worthy because it affects the overall system architecture rather than a routine implementation detail. It determines how different clients communicate with the system and allows a future mobile application to use the same backend services. Changing this architectural approach later could require significant restructuring, so documenting the decision and its consequences will help future developers understand why it was chosen.
+
+### Assignment 3.2 — Reflection
+
+#### 1. What the sample revealed
+
+The QuickNotes sample showed me that technical documentation should explain the important reasons behind implementation choices instead of documenting every obvious line of code. README files should help a new developer set up and use a project, API documentation should clearly describe how a service is called, and ADRs should record important technical decisions and their consequences.
+
+#### 2. Comment I was wrong about
+
+I initially expected the DevFlow repository to contain implementation comments that could be audited. After checking the repository, I found that the current capstone is primarily a planning and documentation repository and does not yet contain implementation source code. Therefore, I could not honestly remove or rewrite a real code comment without inventing evidence.
+
+#### 3. Decision vs implementation detail
+
+A technical decision should be documented when it has a meaningful impact on the architecture, future development, maintainability, or system behaviour. Routine implementation details do not need an ADR. For DevFlow, using a shared backend API is ADR-worthy because it affects how the browser, future mobile application, and database communicate.
+
+## Assignment 3.2 — Deliverables
+
+* README: `README.md`
+* ADR: `docs/decisions/001-shared-backend-api.md`
+* Technical documentation: `docs/API/authentication-module.md`
+* QuickNotes practice: `QuickNotes/`

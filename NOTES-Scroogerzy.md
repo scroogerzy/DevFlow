@@ -411,3 +411,182 @@ A technical decision should be documented when it has a meaningful impact on the
 * ADR: `docs/decisions/001-shared-backend-api.md`
 * Technical documentation: `docs/API/authentication-module.md`
 * QuickNotes practice: `QuickNotes/`
+
+## Assignment 3.3
+
+### Question 1 — Channel Choice
+
+This week I communicated about my DevFlow documentation updates and branch merge process.
+
+A structured Teams or Slack message would have worked better than multiple short messages because it would have provided the full context in one place.
+
+I would include the work completed, the current issue, what I already tried, and the exact help needed.
+
+### Question 2 — The Self-Check
+
+One blocker I experienced was not seeing my documentation changes on the main branch after pushing.
+
+Before asking for help, I checked my branch using git status, verified my commits had been pushed successfully, and reviewed the GitHub repository.
+
+After checking those items, I discovered that my work was on the docs/google-workspace branch and simply needed a pull request and merge.
+
+### Question 3 — Specific vs Vague Feedback
+
+Specific Feedback:
+
+The README explains the project purpose clearly, but the Setup section should include exact installation commands so a new developer can run the project without additional guidance.
+
+Vague Feedback:
+
+The README needs work.
+
+Difference:
+
+Specific feedback identifies the exact issue and suggests an improvement, while vague feedback does not explain what should be changed.
+
+## Task 1 — Channel Rewrite
+
+### Slack Message
+
+Hi team,
+
+The budget sync feature is failing during testing. I am currently investigating the issue and will provide an update once I identify the cause.
+
+### Email
+
+Hello Team,
+
+I would like to discuss whether the Export Feature should remain in the current sprint.
+
+Could we review its priority, estimated effort, and impact on sprint goals before making a final decision?
+
+Thank you.
+
+---
+
+## Task 2 — Question Rewrite
+
+Context:
+
+I am working on the BudgetBuddy application and noticed that category totals are not matching the expected values.
+
+What I Tried:
+
+I reviewed the calculation logic, checked stored transaction values, and verified that all transactions were loading correctly.
+
+Exact Behavior:
+
+The displayed total is lower than the sum of the individual transactions.
+
+Specific Ask:
+
+Can someone review the calculation process and help identify whether any transaction values might be excluded from the total?
+
+## Task 3 — PR Feedback
+
+The updateBudget() function currently performs validation, recalculates category totals, and writes data to the database in a single block.
+
+Consider separating these responsibilities into smaller methods such as ValidateBudget(), CalculateTotals(), and SaveBudget().
+
+This would improve readability, maintainability, and simplify future testing.
+
+## Task 4 — Receiving Feedback
+
+Thank you for the feedback.
+
+I agree that the function currently handles multiple responsibilities.
+
+Would you recommend separating the validation logic first or extracting the database operations first?
+
+I will refactor the function into smaller methods and update the pull request accordingly.
+
+## Task 5 — Real Help Request
+
+Hello,
+
+I am currently working on the DevFlow repository and recently completed Assignment 3.2.
+
+I noticed that my documentation changes were not appearing on the main branch after pushing.
+
+I checked my local repository using git status, verified the commits had been pushed successfully, and reviewed the GitHub repository.
+
+I later discovered that the changes were on the docs/google-workspace branch.
+
+Could you please confirm whether creating and merging a pull request was the correct next step?
+
+Thank you.
+
+---
+
+## Task 6 — Real PR Feedback
+
+File: README.md
+
+The README contains a good project overview and architecture description.
+
+Consider adding a project folder structure section so new contributors can quickly understand where documentation, API specifications, and planning files are located.
+
+This would improve onboarding and repository navigation.
+
+## Task 7 — Reflection on Real Feedback
+
+One useful piece of feedback I received this week was that my repository changes had been pushed successfully but were still located on a separate branch.
+
+The feedback was useful because it identified the exact reason the changes were not visible on the main branch.
+
+I responded by reviewing the branch list, creating a pull request, and merging the branch into main.
+
+## Task 8 — Before / After Message
+
+### Original Message
+
+My files are not showing on GitHub.
+
+### Improved Message
+
+Hi,
+
+I pushed my documentation updates to GitHub successfully.
+
+I checked git status and confirmed my working tree is clean.
+
+The commits appear on the docs/google-workspace branch but are not visible on main.
+
+Can someone confirm whether I need to create a pull request to merge the changes into the main branch?
+
+Thank you.
+
+### What Changed
+
+The revised message provides context, explains what was already checked, and asks a clear question that can be answered quickly.
+
+## NOTES.md Updates
+
+### 1. What the BudgetBuddy Practice Revealed
+
+The BudgetBuddy exercise showed me that many of my questions and updates lacked enough context. Rewriting them helped me communicate more clearly and professionally.
+
+### 2. The Self-Check I Almost Skipped
+
+I almost asked for help before checking the GitHub branch list. After checking, I found that the documentation changes were already pushed successfully and only required a pull request.
+
+### 3. Giving Feedback on Something Real
+
+Giving feedback on a real project felt more meaningful because the suggestion could directly improve the repository. It required more attention to the actual project structure and documentation.
+
+## Links
+
+GitHub Repository:
+https://github.com/scroogerzy/DevFlow
+
+Google Workspace Document:
+https://docs.google.com/document/d/1TJJ4lRc0D_B9lXwxO-jxNV6re5kFvvu9ymjRxSiHjdo/edit?usp=sharing
+
+Task Tracker:
+https://docs.google.com/spreadsheets/d/1V0mtKVHs_Xjtclv6CSupga7sMn1uqoxpwgLopEf0PaU/edit?usp=sharing
+
+Kickoff Deck:
+https://docs.google.com/presentation/d/1jJaGpgXH8biicKOWh03hMrReiZAKwPD6uFw36Zz7_j8/edit?usp=sharing
+
+Calendar:
+https://calendar.google.com/calendar/u/0/gp?hl=en-GB#~calendar:view=e&eid=0j7f9v4kqn1q2c4g1cd3fdgpil&calid=primary
